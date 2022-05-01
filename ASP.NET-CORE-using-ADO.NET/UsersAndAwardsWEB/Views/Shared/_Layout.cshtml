@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - UsersAndAwardsWEB</title>
+    <link rel="stylesheet" href="~/css/style.css" />
+</head>
+<body class="body">
+    <header class="header">
+        <span class="w1">Web</span>
+            <span class="w2">Users</span>
+            <span class="img"></span>
+            <p class="img"><img src="~/imgs/bodyman.png"></p>
+    </header>
+    <main class="main">
+        <ul class="ulNav">
+            <li>
+                <a asp-area="" asp-controller="User" asp-action="Index">Главная</a>
+            </li>
+            <li>
+                <a asp-area="" asp-controller="Award" asp-action="GetAllAwards">Cписок всех наград</a>
+            </li>
+            <li>
+                <a asp-area="" asp-controller="User" asp-action="AddUser">Добавить нового пользователя</a>
+            </li>
+            <li>
+                <a asp-area="" asp-controller="User" asp-action="DeleteUser">Удалить пользователя</a>
+            </li>
+            <li>
+                <a asp-area="" asp-controller="Award" asp-action="AddAward">Добавить новую награду</a>
+            </li>
+            <li>
+                <a asp-area="" asp-controller="Award" asp-action="ChangeAward">Изменить награду</a>
+            </li>
+            <li>
+                <a asp-area="" asp-controller="Award" asp-action="DeleteAward">Удалить награду</a>
+            </li>
+        </ul>
+        <section class="mainSection">
+            @RenderBody()
+        </section>
+    </main>
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2021 - UsersAndAwardsWEB - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

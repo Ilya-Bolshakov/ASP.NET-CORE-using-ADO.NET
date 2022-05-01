@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewData["Title"] = "Удаление пользователя";
+}
+
+<h1>Удаление пользователя</h1>
+
+<h2>Выберите пользователя для удаления</h2>
+<form asp-action="DeleteUser">
+    <p>
+        @*<select asp-items="ViewBag.Awards" asp-for="ID"></select>*@
+        @Html.DropDownList("ID", ViewBag.Users as SelectList, new { @class = "dropDownList" })
+        <div>
+            <button class="btn" type="submit" value="ID">Удалить пользователя</button>
+        </div>
+
+    </p>
+</form>
+

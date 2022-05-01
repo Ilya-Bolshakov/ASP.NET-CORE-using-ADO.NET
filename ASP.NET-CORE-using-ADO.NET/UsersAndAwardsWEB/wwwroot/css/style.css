@@ -1,0 +1,225 @@
+.body {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+
+.mainSection {
+    font-family: Georgia;
+    font-size: 19px;
+}
+
+.header1 {
+    font-size: 45px;
+}
+
+.header {
+    display: flex;
+    background-color: #252530;
+}
+
+.main {
+    display: flex;
+}
+
+.inputs {
+    border-width: 2px;
+    border-color: gray;
+    border-style: outset;
+    border-radius: 4px;
+}
+
+.inputs:hover {
+    box-shadow: none;
+    border-style: solid;
+}
+
+    .inputs:focus {
+        outline: none !important;
+        border-color: white;
+        border-width: 1px;
+    }
+
+.navLeft {
+    width: 580px;
+    border-left: 130px solid white;
+    font-family: "Comic Sans MS", Georgia, Serif;
+    margin: 0px 45px 0px 0px;
+    padding: 5px 50px 5px 0;
+}
+
+.ulNav {
+    list-style-type: none;
+}
+
+    .ulNav > li {
+        color: black;
+        background-color: #ffffff;
+        background-size: contain;
+        width: 300px; /* Ширина слоя */
+        height: 50px; /* Высота слоя */
+        font-size: 20px;
+    }
+
+        .ulNav > li a {
+            display: block; /* Ссылка как блочный элемент */
+            height: 100%; /* Высота на весь слой */
+            color: #000000; /* Цвет ссылки */
+            text-decoration: none;
+        }
+
+            .ulNav > li a:hover {
+                background-color: #DDDDDD;
+            }           
+
+
+.w1 {
+    color: whitesmoke;
+    font-family: cursive;
+    font-size: 50px;
+    position: relative;
+    border-left: 175px solid #252530;
+}
+
+.w2 {
+    color: yellow;
+    font-family: cursive;
+    font-size: 50px;
+}
+
+img {
+    position: absolute;
+    top: 0;
+    right: 1428px;
+    height: 69.7px;
+}
+
+.footer {
+    flex: 0 0 auto;
+    background-color: #eaeaf0;
+    padding: 60px;
+    text-align: center;
+    font-family: serif;
+    font-size: 20px;
+}
+
+.table {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-size: 20px;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+    .table th {
+        background: #2d353b;
+        color: white;
+        padding: 10px 20px;
+    }
+
+    .table td:first-child {
+        height: 65px;
+        width: 150px;
+    }
+
+    .table th, .table td {
+        border-style: solid;
+        border-width: 1px 1px 1px 1px;
+        border-color: rgb(187, 160, 160);
+    }
+
+    .table td {
+        background: #eaeaf0;
+        text-align: left;
+    }
+
+    .table tbody tr:hover td {
+        background-color: #e7e7e7;
+    }
+
+    .table td a {
+        display: block;
+        padding: 16.5px 20px 16.5px 5px;
+        color: black;
+        text-decoration: none;
+    }
+
+
+#selectedItem {
+    background-color: #DDDDDD;
+    padding: 5px 5px 5px 0;
+    margin: 10px 10px 10px 0px;
+}
+
+.btn {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0 25px;
+    margin: 15px 15px 15px 0;
+    outline: none;
+    border: 1px solid #fff;
+    border-radius: 50px;
+    height: 46px;
+    line-height: 46px;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #444;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgb(65 132 144 / 10%), 0 1px 3px rgb(0 0 0 / 8%);
+    cursor: pointer;
+    user-select: none;
+    touch-action: manipulation;
+    vertical-align: top;
+    transition: box-shadow 0.2s;
+}
+
+    .btn:focus-visible {
+        border: 1px solid #4c51f9;
+        outline: none;
+    }
+
+    .btn:hover {
+        transition: all 0.2s;
+        box-shadow: 0 7px 14px rgb(65 132 144 / 10%), 0 3px 6px rgb(0 0 0 / 8%);
+    }
+
+    .btn:active {
+        background-color: #808080;
+    }
+
+    .btn:disabled {
+        background-color: #eee;
+        border-color: #eee;
+        color: #444;
+        cursor: not-allowed;
+    }
+
+.dropDownList {
+    width: 17 0px;
+    height: 30px;
+    color: black;
+    border-radius: 10px;
+    border-width: 2px;
+    border-color: #252530;
+}
+
+.flex {
+    display: flex;
+}
+
+.flexColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+#offset {
+    margin: 0 0 0 30px;
+}
+
+#offsetTop {
+    margin: 120px 0 0 0;
+}
+
+.formDIVs div {
+    margin: 0 0 20px 0;
+}

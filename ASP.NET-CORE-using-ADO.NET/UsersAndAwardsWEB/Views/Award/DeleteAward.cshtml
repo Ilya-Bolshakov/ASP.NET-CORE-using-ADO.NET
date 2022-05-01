@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Удаление награды";
+    
+}
+
+<h1>Удаление награды</h1>
+
+<h2>Выберите награду для удаления</h2>
+<form asp-action="DeleteAward" class="formDIVs">
+    <div>
+        @*<select asp-items="ViewBag.Awards" asp-for="ID"></select>*@
+        @Html.DropDownList("ID", ViewBag.Awards as SelectList, new { @class = "dropDownList" })
+        <div>
+            
+            <button class="btn" id="offsetTop" type="submit" value="ID">Удалить награду</button>
+        </div>
+    </div>
+</form>
+

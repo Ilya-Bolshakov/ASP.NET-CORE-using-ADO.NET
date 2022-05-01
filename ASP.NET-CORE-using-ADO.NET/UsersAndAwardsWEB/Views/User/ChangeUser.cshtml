@@ -1,0 +1,57 @@
+﻿@using UsersAndAwardsWEB.Models.ViewModel;
+@model UserViewModel
+@{
+    ViewData["Title"] = "ChangeUser";
+}
+
+
+<link href="~/multiselect/example-styles.css" rel="stylesheet" />
+
+
+<h1>Изменение @Model.FirstName @Model.LastName</h1>
+
+<h2>Введите данные</h2>
+<form asp-action="ChangeUser" class="formDIVs">
+    <div>
+        <label for="firstName">Введите Имя: </label>
+        <input class="inputs" asp-for="FirstName" id="firstName" required>
+        <span asp-validation-for="FirstName"></span>
+    </div>
+
+    <div>
+        <label for="lastName">Введите Фамилию: </label>
+        <input class="inputs" asp-for="LastName" id="lastName" required>
+        <span asp-validation-for="LastName"></span>
+    </div>
+
+    <div>
+        <label for="birthDate">Введите дату рождения: </label>
+        <input class="inputs" asp-for="BirthDate" id="birthDate" required>
+        <span asp-validation-for="BirthDate"></span>
+    </div>
+    <div>
+        @*<select asp-for="AwardsString" asp-items="ViewBag.Awards">
+        </select>*@
+        <div class="card-body">
+            <div class="row">
+                <div class="col">
+                    <select id="dropDownList-example" name="SelectedIds"
+                            asp-items="ViewBag.Awards" multiple class="form-control"></select>
+
+                </div>
+            </div>
+        </div>
+        <div>
+            <button class="btn" type="submit" id="bAdd">Изменить пользователя</button>
+        </div>
+    </div>
+</form>
+
+@section Scripts{
+    <script src="~/multiselect/jquery.multi-select.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#dropDownList-example').multiSelect();
+        });
+    </script>
+}

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31829.152
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ASP.NET CORE using ADO.NET", "UsersAndAwardsWEB\ASP.NET CORE using ADO.NET.csproj", "{FD384353-E232-4D08-8354-3D90D64B2C5A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FD384353-E232-4D08-8354-3D90D64B2C5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD384353-E232-4D08-8354-3D90D64B2C5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD384353-E232-4D08-8354-3D90D64B2C5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD384353-E232-4D08-8354-3D90D64B2C5A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C18D049E-6BE9-4CFF-AAAB-1AF0F11E9F8B}
+	EndGlobalSection
+EndGlobal

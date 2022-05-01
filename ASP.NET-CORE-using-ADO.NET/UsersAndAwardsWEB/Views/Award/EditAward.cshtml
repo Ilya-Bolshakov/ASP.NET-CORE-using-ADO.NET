@@ -1,0 +1,31 @@
+﻿@using UsersAndAwardsWEB.Models.ViewModel;
+@model AwardViewModel
+@{
+    ViewData["Title"] = "Изменение награды";
+}
+
+<h1>Введите новые данные награды</h1>
+<form asp-action="EditAward" class="formDIVs">
+    <div>
+        <label for="title">Введите название награды: </label>
+        <input asp-for="Title" id="title" required class="inputs">
+        <span asp-validation-for="Title"></span>
+    </div>
+
+    <div>
+        <label for="description">Введите описание награды: </label>
+        <textarea asp-for="Description" id="description" required class="inputs"></textarea>
+        <span asp-validation-for="Description"></span>
+    </div>
+
+    <div>
+        <button class="btn" type="submit" id="bAdd">Изменить награду</button>
+    </div>
+
+    <div>
+        <label for="title">Введите название награды: </label>
+        <input asp-for="ID" type="hidden" id="title" required class="inputs">
+        <span asp-validation-for="Title"></span>
+    </div>
+</form>
+

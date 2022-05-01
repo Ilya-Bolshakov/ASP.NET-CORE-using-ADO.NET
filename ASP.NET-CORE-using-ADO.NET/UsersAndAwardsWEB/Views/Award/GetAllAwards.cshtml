@@ -1,0 +1,31 @@
+﻿@model IList<Entities.Award>
+
+@{
+    ViewData["Title"] = "Список всех наград";
+}
+
+<h1>Список всех наград</h1>
+
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Название награды</th>
+        <th>Описание награды</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+<tr>
+    <td>
+        @item.ID
+    </td>
+    <td>
+        @item.Title
+    </td>
+    <td>
+        @item.Description
+    </td>
+</tr>
+    }
+</table>
+
